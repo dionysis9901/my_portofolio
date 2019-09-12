@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>The Spooky Side</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <meta name="description" content="Front Page">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="articles-box.css">
+  <link rel="stylesheet" type="text/css" href="style-front-page.css">
+  <link rel="stylesheet" type="text/css" href="header-footer-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Dosis|Montserrat|Nosifer&display=swap" rel="stylesheet">
+
+  <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $("#header-id").load("header.html");
+    $("#footer-id").load("footer.html");
+  });
+  </script>
+
+</head>
+
+<body>
+  <div class="container" id="container-id">
+
+          <div class="header-cl" id="header-id"></div>
+
+          <div class="latest-article">
+
+            <p class="catchy-phrase">
+              Where there is no <br>imagination<br>
+              there is no horror
+            </p>
+            <p class="catchy-phrase-caption">
+              Hey, I am Spooky Ray! I help people<br> transfer spooky
+              stories across the internet.<br>
+            </p>
+            <a class="read-latest-content" href="blog.html">Read the lastest content from the Spooky Side</a>
+
+          </div>
+
+          <div class="articles">
+              <div class="boxes">
+
+                  <div class="item-inbox">
+                    <div class="item-name-1">Instant Messaging</div>
+                    It was a wonderful, sunny day, if memory serves.
+                    Surprisingly warm for before the beginning of spring.
+                    The beautiful weather was perfect for the atmosphere of the day
+                    – being married for twenty years is obviously...
+                     <button onclick="window.location.href = 'http://thespookyside.dx.am/blog.html';">Start Reading</button>
+
+
+                  </div>
+                  <div class="item-inbox">
+                    <div class="item-name-2">Roomate Troubles</div>
+                  My sophomore year, I roomed with a girl named Kara. She was a jazz vocalist,
+                   but her main interest was opera. We had a small room on the sixth floor of a
+                    dormitory called Juniper Hall. The walls were thin, and her
+                     late night singing and voice  ...
+                      <button onclick="window.location.href = 'http://thespookyside.dx.am/blog.html';">Start Reading</button>
+
+
+
+                  </div>
+                  <div class="item-inbox">
+                    <div class="item-name-3">Darkness in the Rearview Mirror</div>I have always been uneasy driving alone at night.
+                       It was worst the first few times, when I had just gotten my license,
+                        but the nagging fear has never gone away to this day. It’s disorienting
+                         to look into the mirrors and see nothing, and I mean nothing but the ...
+                     <button onclick="window.location.href = 'http://thespookyside.dx.am/blog.html';">Start Reading</button>
+
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="ad">
+            <p class="quote">The world outside had its own rules,<br> and those rules were not human.</p>
+            <p class="quote-author">-Michel Houellebecq, "The Elementary Particles"</p>
+          </div>
+
+          <div class="footer-cl" id="footer-id"> </div>
+  </div>
+</body>

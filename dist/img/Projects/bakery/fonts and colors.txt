@@ -1,0 +1,14 @@
+Color Pallete
+
+#816159; ---> darky pink
+#B99D8B; ---> light pink
+#382A28; ---> browny red
+#8E1616; ---> ultra reddy (used for tittles)
+
+Fonts
+
+font-family: 'Comfortaa', cursive; ---> comforta tittle (τιτλος)
+font-family: 'Open Sans', sans-serif; ---> open sans ( μαλλον για content)
+font-family: 'Open Sans Condensed', sans-serif; ---> open sans Condensed (μαλλον για content και αυτο )
+
+link ---> <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans|Open+Sans+Condensed:300&display=swap" rel="stylesheet">

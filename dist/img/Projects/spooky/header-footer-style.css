@@ -1,0 +1,109 @@
+/*H E A D E R */
+.header-cl{
+width : 100%;
+grid-column:1/-1;
+background-color:white;
+color:white;
+}
+.header-company-name {
+display:flex;
+flex-wrap:nowrap;
+justify-content:flex-Start;
+font-family: 'Nosifer', cursive;
+color:black;
+font-size: 2em;
+padding-top:17px;
+padding-left:30px;
+text-decoration:none;
+transition-duration: 1.2s;
+}
+.header-content{
+display: flex;
+justify-content: center;
+margin-top: -73px;
+}
+/*buttons about blog contact*/
+.header-anchors{
+margin:0px;
+font-family: 'Dosis', sans-serif;
+color:black;
+font-size: 1.6em;
+text-decoration:none;
+padding: 25px;
+transition-duration: 0.7s;
+/*^^^space between buttons^^^*/
+}
+/*F O O T E R */
+.footer-cl{
+width : 100%;
+grid-column:1/-1;
+background-color:black;
+color:white;
+}
+.footer-company-name {
+display:flex;
+justify-content: center;
+align-items: center;
+font-family: 'Dosis', sans-serif;
+font-size: 1.4em;
+padding-top:20px
+}
+.footer-content{
+display: flex;
+justify-content: center;
+align-items: center;
+margin:0px;
+
+}
+.footer-anchors{
+font-family: 'Dosis', sans-serif;
+color:white;
+font-size: 1em;
+text-decoration:none;
+}
+/*HOVERS DAMN*/
+.header-anchors:hover{
+color: #FF0000;
+}
+.footer-anchors:hover {
+color: #510000;
+}
+.header-company-name:hover{
+color:#FF0000;
+}
+/*I D S */
+ #about1{
+margin-left: auto;
+}
+/*space between blog's name and other options */
+/*mobile*/
+@media only screen
+and (max-width: 415px) {
+  .header-company-name {
+  font-size: 1.4em;
+  padding-top:5px;
+  padding-left:10px;
+  justify-content: center;
+  }
+  .header-content{
+  margin-top: -73px;
+  }
+  /*buttons about blog contact*/
+  .header-anchors{
+
+
+    font-size:1em;
+    text-decoration:none;
+    padding:45px;
+    margin-top:20px;
+}
+
+  /*^^^space between buttons^^^*/
+  .footer-company-name {
+  font-size: 1.2em;
+  padding-top:20px
+  }
+  .footer-anchors{
+  font-size: 0.8em;
+  }
+}

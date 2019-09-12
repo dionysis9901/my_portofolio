@@ -1,0 +1,124 @@
+.container {
+  height:100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows:10% 60% 50% 50% 10%;
+}
+
+.latest-article{
+  /*no change*/
+  grid-column:1/-1;
+  background-image: linear-gradient(to left bottom, #590000, #4f0d0d, #451515, #391b1b, #2c1f1f);
+
+}
+.catchy-phrase{
+  font-size:4.5em;
+  font-family:'Anton', sans-serif;
+  color:white;
+  line-height:1.2em;
+  padding-left: 350px;
+  text-shadow:7px 9px #5C0000;
+}
+.catchy-phrase-caption{
+  font-size:1em;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  padding-left: 350px;
+  margin-top: -70px;
+  margin-bottom: 1px;
+}
+.read-latest-content{
+  font-size:1em;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  text-decoration:none;
+  text-decoration: underline;
+  padding-left: 350px;
+}
+.read-latest-content:hover{
+  color:#D4B3B3;
+}
+
+.articles{
+  background-image: linear-gradient(to right, #000000, #060001, #0d0001, #120001, #160000);
+  grid-column:1/-1;
+  display:flex;
+}
+
+.ad{
+  grid-column:1/-1;
+  background-image: linear-gradient(to left bottom, #590000, #4f0d0d, #451515, #391b1b, #2c1f1f);
+
+}
+.ad > p {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  margin:50px;
+}
+.quote{
+  font-size:4.5em;
+  font-family:'Anton', sans-serif;
+  color:white;
+  line-height:1.2em;
+  text-shadow:7px 9px #5C0000;
+}
+
+.quote-author{
+  font-size:1.5em;
+  letter-spacing: 0.4em;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+
+/*mobile*/
+@media only screen and (max-width: 415px) {
+  .container {
+    grid-template-rows:10% 50% auto auto 10%;
+  }
+
+  .catchy-phrase{
+    font-size:2.5em;
+    padding-left:35px;
+  }
+  .catchy-phrase-caption{
+    font-size:1.1em;
+    padding-left: 35px;
+    margin-top: -20px;
+    margin-bottom: 1px;
+  }
+  .read-latest-content{
+    font-size:0.8em;
+    padding-left: 35px;
+  }
+.articles {
+  display:block;
+}
+.ad > p {
+    display:block;
+    margin:35px;
+}
+.quote{
+  font-size:1.8em;
+  text-shadow:7px 9px #5C0000;
+}
+
+.quote-author{
+  font-size:0.9em;
+  margin-bottom:40px;
+}
+}
+
+@media only screen and (max-width: 360px) {
+  .container {
+    grid-template-rows:13% 50% auto auto 10%;
+  }
+  .catchy-phrase{
+    font-size:2.3em;
+    padding-left:35px;
+  }
+  .read-latest-content{
+    font-size:0.7em;
+    padding-left: 35px;
+  }
+}
