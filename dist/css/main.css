@@ -163,27 +163,35 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
+  grid-template-areas: "bio bio  " "job1 job2 ";
+  grid-template-columns: repeat(3, 1fr);
+  /*.bio-image {
     grid-area: bioimage;
     width: 300px;
     height: 350px;
     margin: auto;
     border-radius: 0%;
-    border: #ff004d 3px solid; }
+    border: $secondary-color 3px solid;
+  }*/
+  /*.job-3 {
+    grid-area: job3;
+  }*/ }
   .about-info .bio {
     grid-area: bio; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
   .about-info .job {
     background: #352d2d;
     padding: 0.5rem;
     border-bottom: #ff004d 5px solid; }
+  .about-info h6 {
+    font-size: 15px; }
+  .about-info #here {
+    color: pink; }
+    .about-info #here:hover {
+      color: #ff004d; }
 
 .projects {
   display: grid;

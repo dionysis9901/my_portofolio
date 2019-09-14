@@ -77,18 +77,23 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+    "bio bio  "
+    "job1 job2 ";
 
-  .bio-image {
+  //the value with the feature of bio image!
+  // "bioimage bio bio"
+  //"job1 job2 job3";
+
+  grid-template-columns: repeat(3, 1fr);
+  //iamge settings
+  /*.bio-image {
     grid-area: bioimage;
     width: 300px;
     height: 350px;
     margin: auto;
     border-radius: 0%;
     border: $secondary-color 3px solid;
-  }
+  }*/
 
   .bio {
     grid-area: bio;
@@ -102,14 +107,24 @@ main {
     grid-area: job2;
   }
 
-  .job-3 {
+  /*.job-3 {
     grid-area: job3;
-  }
+  }*/
 
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+  h6 {
+    font-size: 15px;
+  }
+
+  #here {
+    color: pink;
+    &:hover {
+      color: #ff004d;
+    }
   }
 }
 
